@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="718.0" style="-fx-background-color: #5AC8F2;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="718.0" style="-fx-background-color: #5FA8F3;">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="How To Play" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TabPane layoutX="512.0" layoutY="67.0" prefHeight="365.0" prefWidth="192.0" style="-fx-background-color: #5AC8F2;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab id="cluestab" style="-fx-font-size: 12;" text="Clues">
+               <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFBC58;" />
+               </content>
+          </Tab>
+          <Tab id="notestab" style="-fx-font-size: 12;" text="Notes">
+               <content>
+                  <Pane prefHeight="267.0" prefWidth="138.0" style="-fx-background-color: #FFBC58;">
+                     <children>
+                        <TextArea layoutX="6.0" layoutY="14.0" prefHeight="296.0" prefWidth="179.0" />
+                        <ScrollBar layoutX="168.0" layoutY="16.0" orientation="VERTICAL" prefHeight="293.0" prefWidth="17.0" />
+                     </children>
+                  </Pane>
+               </content>
+          </Tab>
+            <Tab id="answerstab" style="-fx-font-size: 12;" text="Answers">
+               <content>
+                  <Pane prefHeight="268.0" prefWidth="192.0" style="-fx-background-color: #FFBC58;" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="hints" layoutX="91.0" layoutY="440.0" mnemonicParsing="false" text="Hint" />
+      <Button id="clearerrors" layoutX="174.0" layoutY="439.0" mnemonicParsing="false" text="Clear Errors" />
+      <Button id="startover" layoutX="320.0" layoutY="439.0" mnemonicParsing="false" text="Start Over" />
+      <Pane id="puzzleArea" layoutX="29.0" layoutY="67.0" prefHeight="365.0" prefWidth="467.0" style="-fx-background-color: #F0FFFF;" />
+   </children>
+</Pane>
