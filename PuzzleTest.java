@@ -62,21 +62,21 @@ public class PuzzleTest extends Application {
                          switch(event.getClickCount()) {
                          case 1:
                            cells[ii][jj].setUserState('X');
-                           System.out.println(cells[ii][jj].getUserState());
+                           System.out.println("Row: "+ii+" Column: "+jj+":"+cells[ii][jj].getUserState());
                            btn[ii][jj].setGraphic(new ImageView(imageX));
                            btn[ii][jj].setPadding(Insets.EMPTY);
                            break;
                            
                          case 2:
                            cells[ii][jj].setUserState('O');
-                           System.out.println(cells[ii][jj].getUserState());
+                           System.out.println("Row: "+ii+" Column: "+jj+":"+cells[ii][jj].getUserState());
                            btn[ii][jj].setGraphic(new ImageView(imageO));
                            btn[ii][jj].setPadding(Insets.EMPTY);
                            break;
                            
                          case 3:
                             cells[ii][jj].setUserState('B');
-                            System.out.println(cells[ii][jj].getUserState());
+                            System.out.println("Row: "+ii+" Column: "+jj+":"+cells[ii][jj].getUserState());
                             btn[ii][jj].setGraphic(new ImageView(imageBlank));
                             btn[ii][jj].setPadding(Insets.EMPTY);
                             break;
