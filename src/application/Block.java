@@ -1,3 +1,5 @@
+package application;
+
 import javafx.geometry.Insets;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -11,9 +13,9 @@ public class Block extends GridPane {
 	private GridPane grid;
 	private Cell[][] cells;
 	private Button[][] btn;
-	 private final Image imageX = new Image("X.png");
-	 private final Image imageO = new Image("Circle.png");
-	 private final Image imageBlank = new Image("Blank.png");
+	 private final Image imageX = new Image("/application/X.png");
+	 private final Image imageO = new Image("/application/Circle.png");
+	 private final Image imageBlank = new Image("/application/Blank.png");
 
 	public Block(int[][] array){
 		cells = new Cell[array.length][array.length];
@@ -120,4 +122,5 @@ public class Block extends GridPane {
 
 
 }
+
 
